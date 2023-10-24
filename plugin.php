@@ -10,6 +10,8 @@ License: GPLv2 or later
 Text Domain: ci_fraction_to_percent_calculator
 */
 
+if (!defined('ABSPATH')) exit;
+
 if (!function_exists('add_shortcode')) return "No direct call for Fraction to percent calculator by Calculator.iO";
 
 function display_ci_fraction_to_percent_calculator(){
