@@ -12,9 +12,8 @@ Fraction to percent calculator converts proper and improper fractions to percent
 3. Activate the [Fraction to percent calculator](https://www.calculator.io/fraction-to-percent-calculator/ "Fraction to percent calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
-* Add the shortcode `[ci_fraction_to_percent_calculator]` to your page or post and configure default mortgage parameters.
-* If you are using widgets, just add the Fraction to percent calculator to the sidebar through the `Appearance -> Widgets -> Fraction to percent calculator` menu in WordPress.
-* Add the following code: `<?php display_ci_fraction_to_percent_calculator(); ?>` to your template where you would like the Fraction to percent calculator to appear.
+* Add the shortcode `[ci_fraction_to_percent_calculator]` to your page, post or sidebar.
+* Or add the following code: `<?php display_ci_fraction_to_percent_calculator(); ?>` to your template where you would like the Fraction to percent calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/
