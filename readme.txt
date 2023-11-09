@@ -13,6 +13,8 @@ Fraction to percent calculator converts proper and improper fractions to percent
 
 Fraction to percent calculator converts proper and improper fractions to percentages. Calculator is using fraction-decimal-percent algorithm.
 
+[Fraction to percent calculator Homepage](https://www.calculator.io/fraction-to-percent-calculator/ "Fraction to percent calculator Homepage")
+
 __Shortcode__
 
 Use the Fraction to percent calculator shortcode:
