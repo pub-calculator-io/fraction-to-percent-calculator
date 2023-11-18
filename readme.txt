@@ -1,4 +1,4 @@
-=== Fraction to Percent Calculator by Calculator.iO ===
+=== Fraction to Percent Calculator ===
 Contributors: calculatorio
 Tags: fraction to percent, fraction to percent conversion, convert fraction to percent, percent conversion, fraction to percent calculator, percent calculator, fraction conversion, fraction percent conversion, percent equivalent, fraction notation to percent
 Requires at least: 5.0
