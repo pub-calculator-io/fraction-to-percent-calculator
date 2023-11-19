@@ -7,7 +7,7 @@ Fraction to percent calculator converts proper and improper fractions to percent
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/fraction-to-percent-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /fraction-to-percent-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Fraction to Percent Calculator](https://www.calculator.io/fraction-to-percent-calculator/ "Fraction to Percent Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
