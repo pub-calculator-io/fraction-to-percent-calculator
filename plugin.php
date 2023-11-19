@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Fraction to Percent Calculator by www.calculator.io
+Plugin Name: CI Fraction to percent calculator
 Plugin URI: https://www.calculator.io/fraction-to-percent-calculator/
 Description: Fraction to percent calculator converts proper and improper fractions to percentages. Calculator is using fraction-decimal-percent algorithm.
 Version: 1.0.0
