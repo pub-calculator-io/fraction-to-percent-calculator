@@ -1,10 +1,9 @@
 function calculate(){
   
   // 1. init & validate
-  const num = input.get('fraction_number_top').integer().raw();
-  const denom = input.get('fraction_number_bottom').natural().raw();
-  const roundTo = input.get('round_to').optional().whole().lte(6).raw();
-  input.silent = false;
+  const num = input.get('fraction_number_num').integer().raw();
+  const denom = input.get('fraction_number_denom').natural().raw();
+  const roundTo = input.get('round_to').whole().lte(14).raw();
   if(!input.valid()) return;
 
   // 2. calculate
@@ -13,5 +12,5 @@ function calculate(){
 
   // 3. output
   _('result').innerText = result + '%';
-
+  _('result-words').innerText = `${numberToWords(result)} ${plural(result, 'percents:percent:percent:percents:percents:percents', {showNumber: false})}`;
 }

@@ -3,7 +3,6 @@
 Fraction to percent calculator converts proper and improper fractions to percentages. Calculator is using fraction-decimal-percent algorithm.
 
 ![Fraction to Percent Calculator Input Form](/assets/images/screenshot-1.png "Fraction to Percent Calculator Input Form")
-![Fraction to Percent Calculator Calculation Results](/assets/images/screenshot-2.png "Fraction to Percent Calculator Calculation Results")
 
 ## Installation
 

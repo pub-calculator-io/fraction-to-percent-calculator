@@ -32,45 +32,50 @@
                 			<p class="input__title">Fraction</p>
                 		
                 			<div class="input-field input-field--fraction col">
-                				<input type="number" oninput="setMaxLength(this, 999)" class="input-field__input" placeholder="0" id="fraction_number_top" value="5"  />
-                				<input type="number" oninput="setMaxLength(this, 999)" class="input-field__input" placeholder="0" id="fraction_number_bottom" value="12"  />
+                				<input type="number" oninput="setMaxLength(this, 999)" class="input-field__input" id="fraction_number_num" value="1"  />
+                				<input type="number" oninput="setMaxLength(this, 999)" class="input-field__input" id="fraction_number_denom" value="3"  />
+                			</div>
+                		
+                		</label>	</div>
+                	<div class="input-wrapper row">
+                		<label class="input col fraction-calculator,percentage-calculator,mixed-number-calculator,decimal-to-fraction-calculator,simplifying-fractions-calculator,fraction-to-decimal-calculator,mixed-fraction-calculator,equivalent-fractions-calculator,adding-fractions-calculator,decimal-to-percent-calculator,percent-to-fraction-calculator  ">
+                			<p class="input__title">Decimal Places</p>
+                			<div class="input-field row">
+                				<input type="text" class="input-field__input" placeholder=""  id="round_to" value="3"  />
+                			</div>
+                		
+                		
+                			<div class="input-hints row">
+                					<button class="input-hints__hint" onclick="setValue('round_to', '0')">0</button>
+                					<span class="input-hints__hint input-hints__hint--comma">,</span>
+                					<button class="input-hints__hint" onclick="setValue('round_to', '1')">1</button>
+                					<span class="input-hints__hint input-hints__hint--comma">,</span>
+                					<button class="input-hints__hint" onclick="setValue('round_to', '2')">2</button>
+                					<span class="input-hints__hint input-hints__hint--comma">,</span>
+                					<button class="input-hints__hint" onclick="setValue('round_to', '5')">5</button>
+                					<span class="input-hints__hint input-hints__hint--comma">,</span>
+                					<button class="input-hints__hint" onclick="setValue('round_to', '10')">10</button>
+                					<span class="input-hints__hint input-hints__hint--comma">,</span>
+                					<button class="input-hints__hint" onclick="setValue('round_to', '14')">14</button>
                 			</div>
                 		</label>	</div>
                 </div>
-                
-                <div class="calculator-content calculator-content--options calculator-content--gray col  "  >
-                	<div class="calculator-content-head row">
-                		<p class="calculator-content-head__title">Options</p>
-                		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                	<path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.7071 7.29289L9.99999 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68341 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z" fill="#9CA3AF"></path>
-                </svg>
-                	</div>
-                		<div class="calculator-content-body col">
-                			<div class="input-wrapper row">
-                				<label class="input col   ">
-                					<p class="input__title">Decimals to Round to</p>
-                					<div class="input-field row">
-                						<input type="text" class="input-field__input" placeholder=""  id="round_to" value="2"  />
-                					</div>
-                				
-                				
-                				</label></div>
-                		</div>
-                </div>
-                
                 
                 <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row  " >
                 
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
+                	<script type="text/javascript" src="./assets/js/lib/math.min.js" async></script>
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -85,12 +90,11 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
-	<p class="table-cell table-cell--dark table-cell--only-title">Percent</p>
-	<div class="table-cell">
-		<p class="result-text" id="result">41.67%</p>
+	<p class="table-cell table-cell--dark table-cell--only-title">Result</p>
+	<div class="table-cell table-cell--fraction table-cell--fraction-text row animate">
+		<p class="result-text animate"><b id="result">33.333%</b> (<span id="result-words">thirty three and three hundred thirty three thousandths percents</span>)</p>
 	</div>
 </div>
 </span>
